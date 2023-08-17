@@ -1,0 +1,110 @@
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FROGS ARE THE BEST", "DarkTheme")
+
+local Tab = Window:NewTab("Auto")
+local Section = Tab:NewSection("PRO")
+Section:NewToggle("Start 🥚", "Mr egg", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait() 
+        local args = {
+    [1] = "SpawnEgg1",
+    [3] = {
+        ["SpawnEgg1"] = {
+            [1] = "Dog",
+            [2] = "Bunny",
+            [3] = "Fox",
+            [4] = "Cat",
+            [5] = "Rabbit",
+            [6] = "Deer"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("Remotes"):WaitForChild("HatchPet"):FireServer(unpack(args))
+
+        end
+    else
+        _G.loop = false
+        while _G.loop == true do wait() 
+        local args = {
+    [1] = "SpawnEgg1",
+    [3] = {
+        ["SpawnEgg1"] = {
+            [1] = "Dog",
+            [2] = "Bunny",
+            [3] = "Fox",
+            [4] = "Cat",
+            [5] = "Rabbit",
+            [6] = "Deer"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("Remotes"):WaitForChild("HatchPet"):FireServer(unpack(args))
+end
+    end
+end)
+
+Section:NewToggle("Auto Train only Lv 15", "auto train fr", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait(0.5)
+        local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Black SMG"),
+    [2] = {
+        ["p"] = Vector3.new(-2054.099853515625, -125.27774047851562, -3743.4404296875),
+        ["pid"] = 1,
+        ["part"] = workspace:WaitForChild("Targets"):WaitForChild("TargetsZone15"):WaitForChild("Lvl15Target"):WaitForChild("Target15"):WaitForChild("Meshes/Target_Cylinder.001 (1)"),
+        ["d"] = 17.850391387939453,
+        ["maxDist"] = 17.84801483154297,
+        ["m"] = Enum.Material.SmoothPlastic,
+        ["n"] = Vector3.new(-0.9891995191574097, 0.14657548069953918, 0.00004538811481324956),
+        ["t"] = 0.6431837423409451,
+        ["sid"] = 95
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WeaponSystem"):WaitForChild("Remotes"):WaitForChild("WeaponHit"):FireServer(unpack(args))
+
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait(0.5)
+        local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Black SMG"),
+    [2] = {
+        ["p"] = Vector3.new(-2054.099853515625, -125.27774047851562, -3743.4404296875),
+        ["pid"] = 1,
+        ["part"] = workspace:WaitForChild("Targets"):WaitForChild("TargetsZone15"):WaitForChild("Lvl15Target"):WaitForChild("Target15"):WaitForChild("Meshes/Target_Cylinder.001 (1)"),
+        ["d"] = 17.850391387939453,
+        ["maxDist"] = 17.84801483154297,
+        ["m"] = Enum.Material.SmoothPlastic,
+        ["n"] = Vector3.new(-0.9891995191574097, 0.14657548069953918, 0.00004538811481324956),
+        ["t"] = 0.6431837423409451,
+        ["sid"] = 95
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WeaponSystem"):WaitForChild("Remotes"):WaitForChild("WeaponHit"):FireServer(unpack(args))
+
+end
+    end
+end)
+
+Section:NewToggle("Auto Delete", "delets the pets on auto hatch 🥚", function(state)
+    if state then
+        _G.loop = true
+        while _G.loop == true do wait()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/DELETEED/main/DELETEED'))()
+end
+    else
+        _G.loop = false
+        while _G.loop == true do wait()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/xxsfytd/DELETEED/main/DELETEED'))()
+end
+    end
+end)
+
